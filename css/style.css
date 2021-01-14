@@ -27,6 +27,9 @@ h6 {
 h1 .header-text-color {
     color: #21B573;
 }
+p {
+    color: 	#585858;
+}
 .get-started-btn {
     padding: 10px 25px;
     color: #fff;
@@ -53,6 +56,7 @@ h1 .header-text-color {
 .student {
     width: 270px;
     height: 270px;
+    border-radius: 10px;
     background-color: #f8fffb;
     display: flex;
     flex-direction: column;
@@ -81,8 +85,11 @@ h1 .header-text-color {
     color: #585859;
 }
 .card {
-    border: none;
+    border: 1px solid rgba(211, 211, 211, 0.349);
     border-radius: 20px;
+}
+.card:hover {
+    transition: .3s;
     box-shadow: 10px 10px 10px #aeaeae;
 }
 .card .card-img-top {
@@ -93,11 +100,23 @@ h1 .header-text-color {
     border-top: none;
     background-color: rgba(0,0,0,0);
 }
+#testimonial-area {
+    padding-top: 40px;
+}
+.testimonial-img img {
+    width: 75%;
+}
+.testimonial-text p {
+    padding-top: 80px;
+}
 #footer-area {
     color: #fff;
     background-color: #252831;
     margin-top: 40px;
     padding: 40px 0;
+}
+#footer-area p {
+    color: #fff;
 }
 #footer-area ul li a{
     color: #fff;
@@ -107,9 +126,11 @@ h1 .header-text-color {
     text-decoration: none;
     color: #aeaeae;
 }
-.copy-rights {
+.copy-rights p{
     text-align: center;
-    margin-top: 40px;
+    padding: 10px 0;
+    margin-top: 20px;
+    margin-bottom: -40px;
 }
 @media only screen and (min-width: 320px) and (max-width: 576px) { 
     .main-logo {
@@ -140,5 +161,10 @@ h1 .header-text-color {
     .card {
         width: 100%;
         box-shadow: none;
+    }
+    .testimonial-img img {
+        width: 200px;
+        padding: relative;
+        left: 100px;
     }
 }
